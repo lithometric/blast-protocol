@@ -1,0 +1,15 @@
+[package]
+name = "blast"
+version = "0.1.0"
+edition = "2021"
+description = "Local agent-to-agent protocol: agents on one machine see each other's work and learn what they broke, for zero model tokens"
+license = "MIT"
+
+[[bin]]
+name = "blast"
+path = "src/main.rs"
+
+[dependencies]
+blast-core = { path = "../blast-core" }
+serde_json = "1"
+sha2 = "0.10"
